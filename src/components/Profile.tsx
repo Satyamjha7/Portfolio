@@ -2,10 +2,10 @@ import Avatar from "./Avatar";
 
 export default function Profile() {
   return (
-      <section className="w-full flex justify-center px-4 md:px-10 lg:px-5 sm:px-16 py-16">
+      <section className="w-full flex justify-center md:px-10 lg:px-5 sm:px-16 py-16">
       <div className="max-w-4xl w-full">
         <div className="flex flex-col md:flex-row items-center md:items-center gap-6 md:gap-8">
-                  <div className="flex-shrink-0">
+          <div className="flex-shrink-0 mx-auto md:mx-0">
             <div className="w-32 h-32 md:w-36 md:h-36">
               <Avatar />
             </div>
@@ -34,7 +34,6 @@ export default function Profile() {
             for the privilege.”
           </span>
         </div>
-
       </div>
     </section>
   );

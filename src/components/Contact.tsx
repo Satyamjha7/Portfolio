@@ -4,7 +4,7 @@ import { CardSpotlight } from "./ui/card-spotlight";
 
 export default function Contact() {
     return (
-        <section className="w-full max-w-4xl mx-auto px-4 md:px-10 mt-10">
+        <section className="w-full max-w-4xl mx-auto md:px-10 mt-10">
             <div className="mb-8">
                 <div className="flex items-center space-x-3 mb-2 relative">
                     <div className="relative flex items-center justify-center w-5 h-5 rounded-full border border-white/30">

@@ -3,7 +3,7 @@ import { CardSpotlight } from "./ui/card-spotlight";
 
 export default function Blogs() {
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5">
+        <section className="w-full max-w-7xl mx-auto sm:px-6 lg:px-8 mt-5">
             <div className="mb-6">
                 <div className="flex items-center space-x-3 mb-2 relative">
                     <div className="relative flex items-center justify-center w-5 h-5 rounded-full border border-white">
@@ -16,7 +16,7 @@ export default function Blogs() {
                     </h2>
                 </div>
 
-                <p className="mb-6 text-gray-400 max-w-full md:max-w-2xl text-sm text-start">
+                <p className="mb-6 text-gray-400 max-w-full md:max-w-4xl text-sm text-start">
                     Thoughts, lessons, and technical insights I’ve learned along the way.
                     From debugging strange issues to reflecting on personal experiences,
                     each blog captures something real from my journey.

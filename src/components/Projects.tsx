@@ -3,11 +3,11 @@ import { CardSpotlight } from "./ui/card-spotlight";
 
 const projects = [
     {
-        title: "Smart Contract Security",
+        title: "GaonConnect: Modular LMS for Rural Education",
         description:
-            "A Solidity project implementing require(), assert(), and revert() for secure contract execution.",
-        link: "https://github.com/yourusername/smart-contract-security",
-        tech: ["Solidity", "Ethereum", "Smart Contracts"],
+            "Empowering Rural Communities Through Digital Learning with GaonConnect, a modular LMS app built using React Native, Firebase, and Expo.",
+        link: "https://github.com/Satyamjha7/GaonConnect/tree/main",
+        tech: ["ReactNative", "Firebase", "Expo"],
     },
     {
         title: "Online Book Store",
@@ -34,7 +34,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5">
+        <section className="w-full max-w-7xl mx-auto sm:px-6 lg:px-8 mt-5">
             <div className="mb-6">
                 <div className="flex items-center space-x-3 mb-2 relative">
                     <div className="relative flex items-center justify-center w-5 h-5 rounded-full border border-white">
@@ -45,7 +45,7 @@ export default function Projects() {
                         Projects
                     </h2>
                 </div>
-                <p className="mb-6 text-gray-400 max-w-full md:max-w-2xl text-sm text-start">
+                <p className="mb-6 text-gray-400 max-w-full md:max-w-4xl text-sm text-start">
                     A collection of projects I’ve built ranging from web applications and
                     UI experiments to problem-solving algorithms. Each project reflects my
                     learning, creativity, and love for building useful things.
@@ -64,7 +64,7 @@ export default function Projects() {
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-3"
                             >
-                                <h3 className="text-lg font-semibold text-white mb-3">
+                                <h3 className="text-lg items-start text-left font-semibold text-white mb-3">
                                     {project.title}
                                 </h3>
                                 <svg

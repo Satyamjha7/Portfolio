@@ -20,7 +20,7 @@ const sectionVariant: any = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.1, // Reduced delay slightly for snappier load
+      delay: i * 0.1,
       duration: 0.6,
       ease: "easeOut",
     },
@@ -31,7 +31,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2500); // Reduced time for better UX (6s is very long)
+    const timer = setTimeout(() => setLoading(false), 2500);
     return () => clearTimeout(timer);
   }, []);
 

@@ -3,8 +3,8 @@ import { CardSpotlight } from "./ui/card-spotlight";
 
 export default function Publication() {
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5">
-            <div className="mb-6">
+        <section className="w-full max-w-7xl mx-auto sm:px-6 lg:px-8 mt-5">
+            <div className="mb-6 ">
                 <div className="flex items-center space-x-3 mb-2 relative">
                     <div className="relative flex items-center justify-center w-5 h-5 rounded-full border border-white">
                         <span className="w-2 h-2 rounded-full bg-green-500 animate-ping"></span>
@@ -16,7 +16,7 @@ export default function Publication() {
                     </h2>
                 </div>
 
-                <p className="mb-6 text-gray-400 max-w-full md:max-w-2xl text-sm text-start">
+                <p className="mb-6 text-gray-400 max-w-full md:max-w-4xl text-sm text-start">
                     A collection of my published work focused on machine learning,
                     explainable AI, and analytical solutions for real-world challenges.
                     Each publication reflects my interest in research, innovation,
