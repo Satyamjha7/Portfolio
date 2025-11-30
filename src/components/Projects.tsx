@@ -35,7 +35,6 @@ const projects = [
 export default function Projects() {
     return (
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5">
-            {/* Heading + description */}
             <div className="mb-6">
                 <div className="flex items-center space-x-3 mb-2 relative">
                     <div className="relative flex items-center justify-center w-5 h-5 rounded-full border border-white">
@@ -52,8 +51,6 @@ export default function Projects() {
                     learning, creativity, and love for building useful things.
                 </p>
             </div>
-
-            {/* Responsive grid: 1 col on mobile, 2 cols on tablets and up */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {projects.map((project, idx) => (
                     <CardSpotlight
@@ -85,8 +82,6 @@ export default function Projects() {
                             <p className="text-sm text-gray-400 mb-4 text-start">
                                 {project.description}
                             </p>
-
-                            {/* Tech Tags */}
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {project.tech.map((tag, i) => (
                                     <span
@@ -98,8 +93,6 @@ export default function Projects() {
                                 ))}
                             </div>
                         </div>
-
-                        {/* Gradient bar at bottom */}
                         <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#22c55e] to-transparent" />
                     </CardSpotlight>
                 ))}

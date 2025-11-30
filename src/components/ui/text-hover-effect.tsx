@@ -39,7 +39,6 @@ export const TextHoverEffect = ({
       className="select-none"
     >
       <defs>
-        {/* Animated gradient for hover */}
         <motion.linearGradient
           id="textGradient"
           gradientUnits="userSpaceOnUse"
@@ -63,8 +62,6 @@ export const TextHoverEffect = ({
           <stop offset="75%" stopColor="#06b6d4" />
           <stop offset="100%" stopColor="#8b5cf6" />
         </motion.linearGradient>
-
-        {/* Circular reveal mask that follows cursor */}
         <motion.radialGradient
           id="revealMask"
           gradientUnits="userSpaceOnUse"
@@ -90,8 +87,6 @@ export const TextHoverEffect = ({
           />
         </mask>
       </defs>
-
-      {/* Base text (idle: subtle gray/black stroke) */}
       <text
         x="50%"
         y="50%"
@@ -103,8 +98,6 @@ export const TextHoverEffect = ({
       >
         {text}
       </text>
-
-      {/* Stroke animation (draw-in effect only once) */}
       <motion.text
         x="50%"
         y="50%"

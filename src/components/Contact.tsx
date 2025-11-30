@@ -4,10 +4,7 @@ import { CardSpotlight } from "./ui/card-spotlight";
 
 export default function Contact() {
     return (
-        // 1. ALIGNMENT FIX: Matches the exact width/padding of your other components
         <section className="w-full max-w-4xl mx-auto px-4 md:px-10 mt-10">
-
-            {/* Heading + description */}
             <div className="mb-8">
                 <div className="flex items-center space-x-3 mb-2 relative">
                     <div className="relative flex items-center justify-center w-5 h-5 rounded-full border border-white/30">
@@ -25,14 +22,10 @@ export default function Contact() {
                     say hi.
                 </p>
             </div>
-
-            {/* Contact Form Container */}
             <div className="w-full">
                 <CardSpotlight className="p-5 md:p-8 relative overflow-hidden bg-neutral-950/50 border border-white/10 rounded-xl">
                     <div className="relative z-10 flex flex-col w-full">
                         <form className="flex flex-col gap-4 w-full">
-
-                            {/* Name & Email Row - Stacks on mobile, Row on Desktop */}
                             <div className="flex flex-col md:flex-row gap-4 w-full">
                                 <input
                                     type="text"
@@ -60,8 +53,6 @@ export default function Contact() {
                                     required
                                 />
                             </div>
-
-                            {/* Message Area */}
                             <textarea
                                 rows={5}
                                 placeholder="Your Message..."
@@ -74,8 +65,6 @@ export default function Contact() {
                 "
                                 required
                             ></textarea>
-
-                            {/* Submit Button */}
                             <button
                                 type="submit"
                                 className="
@@ -92,8 +81,6 @@ export default function Contact() {
                     </div>
                 </CardSpotlight>
             </div>
-
-            {/* Footer Note */}
             <div className="mt-4 flex items-center gap-2 text-xs text-gray-500 pl-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500/50"></span>
                 I usually reply within 24 hours

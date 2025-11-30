@@ -4,8 +4,6 @@ import { CardSpotlight } from "./ui/card-spotlight";
 export default function Publication() {
     return (
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5">
-
-            {/* Heading + description */}
             <div className="mb-6">
                 <div className="flex items-center space-x-3 mb-2 relative">
                     <div className="relative flex items-center justify-center w-5 h-5 rounded-full border border-white">
@@ -25,8 +23,6 @@ export default function Publication() {
                     and impactful problem-solving.
                 </p>
             </div>
-
-            {/* Publication Card */}
             <div className="grid grid-cols-1 gap-5">
                 <CardSpotlight className="p-6 relative overflow-hidden group h-auto min-h-[16rem] sm:min-h-[18rem]">
                     <div className="relative z-10 flex flex-col items-start">
@@ -61,8 +57,6 @@ export default function Publication() {
                             transparency, enabling data-driven retention strategies across
                             industries.
                         </p>
-
-                        {/* Tags */}
                         <div className="flex flex-wrap gap-2 mb-4">
                             <span className="px-3 py-1 border border-gray-700 text-gray-300 text-xs rounded-md hover:border-gray-500 transition">
                                 Machine Learning
@@ -78,8 +72,6 @@ export default function Publication() {
                             </span>
                         </div>
                     </div>
-
-                    {/* Bottom accent bar */}
                     <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#22c55e] to-transparent" />
                 </CardSpotlight>
             </div>

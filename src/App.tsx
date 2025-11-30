@@ -41,21 +41,12 @@ function App() {
 
   return (
     <div className="relative w-full min-h-screen overflow-x-hidden bg-black text-white">
-      {/* Background */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <GridBackgroundDemo />
       </div>
-
-      {/* Main Content Wrapper */}
       <div className="relative z-10 w-full py-10 md:py-20">
-
-        {/* TracingBeam wraps the content. We remove offsetLeft to let it center naturally. */}
         <TracingBeam className="px-4 md:px-8">
-
-          {/* Inner Container: Holds everything in a centered column */}
           <div className="w-full max-w-4xl mx-auto flex flex-col gap-16 md:gap-24">
-
-            {/* 1. Profile Section */}
             <motion.div
               variants={sectionVariant}
               initial="hidden"
@@ -64,8 +55,6 @@ function App() {
             >
               <Profile />
             </motion.div>
-
-            {/* 2. Skills Section */}
             <motion.div
               variants={sectionVariant}
               initial="hidden"
@@ -75,8 +64,6 @@ function App() {
             >
               <Skills />
             </motion.div>
-
-            {/* 3. Education Section */}
             <motion.div
               variants={sectionVariant}
               initial="hidden"
@@ -86,8 +73,6 @@ function App() {
             >
               <Education />
             </motion.div>
-
-            {/* 4. Projects Section */}
             <motion.div
               variants={sectionVariant}
               initial="hidden"
@@ -97,8 +82,6 @@ function App() {
             >
               <Projects />
             </motion.div>
-
-            {/* 5. Publication Section */}
             <motion.div
               variants={sectionVariant}
               initial="hidden"
@@ -108,8 +91,6 @@ function App() {
             >
               <Publication />
             </motion.div>
-
-            {/* 6. Blogs Section */}
             <motion.div
               variants={sectionVariant}
               initial="hidden"
@@ -119,8 +100,6 @@ function App() {
             >
               <Blogs />
             </motion.div>
-
-            {/* 7. Contact Section */}
             <motion.div
               variants={sectionVariant}
               initial="hidden"
@@ -130,8 +109,6 @@ function App() {
             >
               <Contact />
             </motion.div>
-
-            {/* Footer & Signature */}
             <div className="flex flex-col items-center gap-6 mt-10">
               <Footer />
               <Signature />

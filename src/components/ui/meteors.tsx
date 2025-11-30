@@ -20,8 +20,8 @@ export const Meteors = ({
     >
       {meteors.map((_, idx) => {
         const meteorCount = number;
-        const position = idx * (800 / meteorCount) - 400; // spread evenly
-        const randomTop = Math.floor(Math.random() * -200) - 40; // random start height
+        const position = idx * (800 / meteorCount) - 400;
+        const randomTop = Math.floor(Math.random() * -200) - 40;
 
         return (
           <span

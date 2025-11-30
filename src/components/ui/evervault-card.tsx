@@ -9,13 +9,8 @@ export const PlusCard = ({ className }: { className?: string }) => {
         className
       )}
     >
-      {/* Pixel-like background pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,0,150,0.3)_1px,transparent_1px)] [background-size:4px_4px]" />
-
-      {/* Gradient overlay for depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black" />
-
-      {/* Plus Sign */}
       <div className="relative z-10 text-white text-6xl font-bold">+</div>
     </div>
   );

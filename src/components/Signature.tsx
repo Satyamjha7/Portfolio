@@ -11,12 +11,9 @@ export default function Signature() {
             pt-6
         "
             >
-                {/* Name - Centered on mobile, Left on desktop */}
                 <h3 className="text-gray-300 text-sm tracking-wide font-light">
                     Satyam Jha
                 </h3>
-
-                {/* Icons - Centered on mobile, Right on desktop */}
                 <div className="flex items-center gap-5">
                     <a
                         href="https://x.com/Satyam___7"

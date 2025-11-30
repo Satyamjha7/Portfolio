@@ -1,9 +1,6 @@
 const Education = () => {
     return (
-        // 1. CONTAINER: max-w-4xl to match Profile/Skills, px-4 for mobile spacing
         <section className="w-full max-w-4xl mx-auto px-4 md:px-10 mt-10">
-
-            {/* Heading */}
             <div className="mb-6">
                 <div className="flex items-center space-x-3 mb-2 relative">
                     <div className="relative flex items-center justify-center w-5 h-5 rounded-full border border-white">
@@ -16,9 +13,6 @@ const Education = () => {
                     </h2>
                 </div>
             </div>
-
-            {/* Education Card */}
-            {/* 2. CARD WIDTH: Changed w-[680px] to w-full for responsiveness */}
             <div
                 className="
                     relative w-full mx-auto 
@@ -29,17 +23,13 @@ const Education = () => {
                     rounded-sm
                 "
             >
-                {/* Decorative Corners */}
                 <span className="absolute -top-3 -left-1 text-gray-500/50 text-xl font-light">+</span>
                 <span className="absolute -top-3 -right-1 text-gray-500/50 text-xl font-light">+</span>
                 <span className="absolute -bottom-3 -left-1 text-gray-500/50 text-xl font-light">+</span>
                 <span className="absolute -bottom-3 -right-1 text-gray-500/50 text-xl font-light">+</span>
 
                 <div className="space-y-8 md:space-y-6 text-left">
-
-                    {/* ITEM 1: University */}
                     <div className="flex flex-col">
-                        {/* Header: Degree & Uni (Stacks on mobile, Row on Desktop) */}
                         <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-2 mb-1">
                             <h3 className="flex items-start md:items-center gap-2 text-sm md:text-base font-semibold text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5 md:mt-0" viewBox="0 -960 960 960" fill="currentColor">
@@ -47,21 +37,13 @@ const Education = () => {
                                 </svg>
                                 B.E in Computer Science
                             </h3>
-
-                            {/* Pipe separator hidden on mobile */}
                             <span className="hidden md:inline text-gray-500">|</span>
-
-                            {/* University Name */}
                             <span className="text-gray-400 text-sm md:text-base font-normal ml-7 md:ml-0">
                                 Chandigarh University
                             </span>
                         </div>
-
-                        {/* Location & Year */}
                         <div className="ml-7 flex flex-col gap-1">
                             <p className="text-xs text-gray-500">Punjab, India • 2022 – 2026</p>
-
-                            {/* Tags */}
                             <div className="mt-3 flex flex-row gap-2 flex-wrap">
                                 {["CSE", "AI", "ML", "Data Science"].map((item, index) => (
                                     <span key={index}
@@ -73,11 +55,7 @@ const Education = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* Divider Line (Optional, for visual separation) */}
                     <div className="w-full h-[1px] bg-white/10 md:hidden"></div>
-
-                    {/* ITEM 2: Senior Secondary */}
                     <div className="flex flex-col">
                         <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-2 mb-1">
                             <h3 className="flex items-start md:items-center gap-2 text-sm md:text-base font-semibold text-white">

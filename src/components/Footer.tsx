@@ -14,7 +14,6 @@ export default function ContactPopup() {
         { icon: <Mail size={20} />, href: "mailto:imsatyam7official@gmail.com", color: "hover:bg-red-600" },
     ];
 
-    // Close popup on scroll
     useEffect(() => {
         const handleScroll = () => {
             if (open) setOpen(false);
@@ -23,7 +22,6 @@ export default function ContactPopup() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [open]);
 
-    // Initial pulse animation
     useEffect(() => {
         const timer = setTimeout(() => setFirstEffect(false), 2000);
         return () => clearTimeout(timer);
@@ -31,8 +29,6 @@ export default function ContactPopup() {
 
     return (
         <div className="fixed z-[999] bottom-5 right-5 md:bottom-10 md:right-10 flex flex-col items-center">
-
-            {/* Social Icons Stack */}
             <AnimatePresence>
                 {open && (
                     <motion.div
@@ -67,8 +63,6 @@ export default function ContactPopup() {
                     </motion.div>
                 )}
             </AnimatePresence>
-
-            {/* Main Toggle Button with Image */}
             <motion.button
                 onClick={() => setOpen(!open)}
                 whileHover={{ scale: 1.05 }}
@@ -91,8 +85,6 @@ export default function ContactPopup() {
                     alt="Contact"
                     className="w-full h-full object-cover"
                 />
-
-                {/* Online Status Dot */}
                 {!open && !firstEffect && (
                     <span className="absolute top-2 right-2 flex h-3 w-3">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>

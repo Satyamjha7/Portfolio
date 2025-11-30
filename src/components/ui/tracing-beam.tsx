@@ -57,10 +57,6 @@ export const TracingBeam = ({
       ref={ref}
       className={cn("relative mx-auto h-full w-full max-w-4xl", className)}
     >
-      {/* CHANGE IS HERE: 
-         Changed 'md:left-24' to 'md:left-0'. 
-         This pins the beam to the left edge of the container. 
-      */}
       <div className="hidden md:block absolute top-3 left-0 md:left-0">
         <motion.div
           transition={{ duration: 0.2, delay: 0.5 }}

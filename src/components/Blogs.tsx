@@ -4,8 +4,6 @@ import { CardSpotlight } from "./ui/card-spotlight";
 export default function Blogs() {
     return (
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5">
-
-            {/* Heading + description */}
             <div className="mb-6">
                 <div className="flex items-center space-x-3 mb-2 relative">
                     <div className="relative flex items-center justify-center w-5 h-5 rounded-full border border-white">
@@ -24,8 +22,6 @@ export default function Blogs() {
                     each blog captures something real from my journey.
                 </p>
             </div>
-
-            {/* Blog Cards */}
             <div className="grid grid-cols-1 gap-5">
                 <CardSpotlight className="p-6 relative overflow-hidden group h-auto min-h-[14rem] border">
                     <div className="relative z-10 flex flex-col items-start">
@@ -57,15 +53,11 @@ export default function Blogs() {
                                 clarity often matter more than grinding endless coding questions
                                 — especially during placements and interviews.
                             </p>
-
-                            {/* Date */}
                             <span className="text-xs text-gray-500 mt-1 text-left w-full block">
                                 Oct 5, 2025
                             </span>
                         </a>
                     </div>
-
-                    {/* Bottom gradient bar */}
                     <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#22c55e] to-transparent" />
                 </CardSpotlight>
             </div>
